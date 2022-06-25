@@ -1,0 +1,323 @@
+
+/* font */
+/* https://snappa.com/blog/font-combinations/ */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+
+
+/**
+ *  generic 
+ */
+
+ * {
+  font-family:'Lato', sans-serif;
+  box-sizing: border-box;
+}
+
+
+/**
+*  elements
+*/
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 1000px;
+}
+
+
+/* header */
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    min-height: 50px;
+    background-color: #deb1b1;
+  }
+
+  a.logo {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 0.5;
+  }
+
+  /* boutons */
+  .header__btns {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .btn-log {
+    background-color: #000000;
+    color: white;
+    margin: 5px;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  .btn {
+    background-color: #ffffffa0;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 5px;
+    padding: 10px;
+    text-decoration: none;
+    transition: .3s ease;
+  }
+
+  .btn:hover {
+    background-color: #ffffff;
+    color: black;
+    margin: 5px;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+
+
+  .header__btns p {
+    color: black;
+    font-size: 20px;
+    margin: 5px 5px 5px 100px;
+    padding: 7px;
+    text-decoration: none;
+  }
+
+/* ------ */
+
+/* Contenu */
+main {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+h2 {
+  width: 70px;
+  font-size: large;
+  padding: 5px;
+  font-weight: 400;
+  background-color: #bababa;
+}
+
+/* ARTICLE */
+.container__article {
+  padding: 20px 10px;
+  border-top: solid 1px #d5d5d5;
+}
+
+.article__titre {
+  padding: 10px;
+  font-size: 30px;
+}
+
+.article__texte {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.article__auteur {
+  margin: 20px 10px;
+  font-size: 15px;
+}
+
+.Modif-supprime {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Modif-supprime .btn {
+  background-color: #b2b2b2;
+  color: black;
+  margin: 5px;
+  padding: 10px;
+  text-decoration: none;
+  transition: .3s ease;
+}
+
+.Modif-supprime .btn:hover {
+  background-color: #5b5b5b;
+  color: white;
+  margin: 5px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+
+/* FORMULAIRES */
+
+.container {
+  padding: 20px;
+  font-size: 18px;
+  text-align: justify;
+  display: grid;
+  align-items: center;
+  justify-content: center;  
+}
+
+.form-article{
+  padding: 25px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  min-width: 500px;
+}
+
+
+select, input, textarea, #submit-button{
+  margin: 15px;
+  padding: 15px 10px;
+  border: 2px solid black;
+  width: 80%;
+  border-radius: 0.7em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 350px;
+}
+
+.form-recherche {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-recherche input {
+  padding: 5px;
+}
+
+.form-recherche p {
+  padding: 5px;
+  margin-left: 400px;
+  margin-top: 15px;
+  min-width: 200px;
+}
+
+.btn-recherche-submit {
+  width: 100px;
+  transition: .3s ease;
+}
+
+.btn-recherche-submit:hover {
+  background-color: #deb1b1;
+}
+
+/* footer */
+footer {
+  position: fixed;
+  margin-top: 30px;
+  bottom: 5px;
+  right: 15px;
+}
+
+
+/* Formulaire Login */
+/* reférence : https://codepen.io/Lewitje/pen/BNNJjo */
+
+
+.wrapper {
+  background: #4a4a4a;
+  background: -webkit-linear-gradient(top left, #4a4a4a 0%, #c38787 100%);
+  background: -moz-linear-gradient(top left, #4a4a4a 0%, #c38787 100%);
+  background: -o-linear-gradient(top left, #4a4a4a 0%, #c38787 100%);
+  background: linear-gradient(to bottom right, #4a4a4a 0%, #c38787 100%);
+
+  position: absolute;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+.container{
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 80px 0;
+	height: 400px;
+	text-align: center;
+}
+
+.container h1{
+  font-size: 40px;
+  color: white;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-put;
+  font-weight: 200;
+}
+
+.frm-login {
+	padding: 20px 0;
+	position: relative;
+	z-index: 2;
+}
+
+.frm-login input{
+  display: block;
+  appearance: none;
+  outline: 0;
+  border: 1px solid #ffffffc0;;
+  background-color:#ffffffa0;
+  width: 250px;
+  
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  
+  color: white;
+  
+  transition-duration: 0.25s;
+  font-weight: 300;
+  
+  
+}
+
+.frm-login input:hover{
+  background-color: #ffffffc0;
+}
+
+.frm-login input:focus{
+  background-color: white;
+  width: 300px;
+  color: black;
+}
+.btn-submit {
+  appearance: none;
+  outline: 0;
+  background-color: white;
+  border: 0;
+  padding: 10px 15px;
+  color: black;
+  border-radius: 3px;
+  width: 250px;
+  cursor: pointer;
+  font-size: 18px;
+  transition-duration: 0.25s;
+  
+  
+}
+
+.btn-submit:hover{
+  background-color: rgb(245, 247, 249);
+}
