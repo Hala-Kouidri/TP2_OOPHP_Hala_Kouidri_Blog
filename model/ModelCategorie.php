@@ -4,6 +4,8 @@
        protected $table = 'Categorie';
        protected $primaryKey = 'id';
 
+    //    protected $fillable = ['nom'];
+
     } 
 
 ?>
